@@ -1,0 +1,595 @@
+{
+	"info": {
+		"_postman_id": "85cefadb-f9bf-4b79-9355-1663895bace6",
+		"name": "Quiz",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29726146"
+	},
+	"item": [
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "quizname",
+									"value": "test quiz 2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "category",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "this is a test desc",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/SA10/Downloads/Lion.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/category/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single record",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/category/single/650d55f6c09ad2e267ada8bd",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"single",
+								"650d55f6c09ad2e267ada8bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Records",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/category/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Records Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/category/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "quizname",
+									"value": "test 2 update",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "test quiz 2",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "description update",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/SA10/Downloads/ZMBC10.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/category/650bf8ffa987ade8dec4dbfa",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"650bf8ffa987ade8dec4dbfa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/category/650be1a87b4adfaf72431311",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"650be1a87b4adfaf72431311"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "image upload",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/uploads/1695283455410-Red_Kitten.jpg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"uploads",
+								"1695283455410-Red_Kitten.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Sub Category",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subCategory_name",
+									"value": "Test3 subcategory 2",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "651102812375477a36389b3e",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "subcategory description",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/SA10/Downloads/sub4.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/subcategory/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"subcategory",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single record",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/subcategory/single/6513aa9378f8cf11be0a5e1d",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"subcategory",
+								"single",
+								"6513aa9378f8cf11be0a5e1d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Records",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/subcategory/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"subcategory",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Subcategory By Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/subcategory/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"subcategory",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Category",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "subCategory_name",
+									"value": "Test3 subcategory 1 UPDATE",
+									"type": "text"
+								},
+								{
+									"key": "category",
+									"value": "651102812375477a36389b3e",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "subcategory description update",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/SA10/Downloads/sub3.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/subcategory/6513aa9378f8cf11be0a5e1d",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"subcategory",
+								"6513aa9378f8cf11be0a5e1d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/category/650be1a87b4adfaf72431311",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"650be1a87b4adfaf72431311"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "image upload",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/uploads/1695283455410-Red_Kitten.jpg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"uploads",
+								"1695283455410-Red_Kitten.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Question",
+			"item": [
+				{
+					"name": "Create Question",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"question\": \"What is the capital of India?\",\r\n  \"options\": [\"London\", \"Berlin\", \"Delhi\", \"Paris\"],\r\n  \"answer\": \"option4\",\r\n  \"category\": \"650be95f4226ea0c3bf3898e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/question/create",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Single Record",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/question/single/65116ebc04e908eafc850ecd",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"single",
+								"65116ebc04e908eafc850ecd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Record",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/question/all",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"all"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "test",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Question",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"question\": \"What is the capital of Spain?\",\r\n  \"options\": [\"London\", \"Berlin\", \"Delhi\", \"Paris\"],\r\n  \"answer\": \"option3\",\r\n  \"category\": \"650be95f4226ea0c3bf3898e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/question/650be38ff835f1c346ef512f",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"650be38ff835f1c346ef512f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/question/650d3b718cab3d73ab5cb889",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"650d3b718cab3d73ab5cb889"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Questions by Category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/question/category/650d55f6c09ad2e267ada8bd",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"category",
+								"650d55f6c09ad2e267ada8bd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Questions by SubCategory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/question/category/650d55f6c09ad2e267ada8bd",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"question",
+								"category",
+								"650d55f6c09ad2e267ada8bd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
